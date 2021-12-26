@@ -1,0 +1,65 @@
+*,*::after,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: white;
+
+}
+body{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: monospace;
+    text-transform: capitalize;
+}
+.btn{
+    padding: .8em 1em;
+    text-transform: capitalize;
+    border: 0;
+    background-color: #ca3e47;
+    color: #FFFFFF;
+}
+.btn:hover{
+    background-color: #ffb549;
+    transition:background 0.3s ease-in-out;
+}
+
+
+
+.overlay {
+    width: 0%;
+    height: 100%;
+    position: fixed;
+    background-color: hsla(0, 0%, 3%, 0.904);
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .75s ease-in-out;
+}
+.overlay-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 2.25rem;
+    position: relative;
+    top: 25%;
+    text-align: center;
+}
+.overlay-content a:hover {
+    color: #ffb549;
+}
+#close {
+    all: unset;
+    color: white;
+    font-size: 2.5rem;
+    position: relative;
+    top: 3%;
+    left: 85%;
+}
+#close:hover {
+    color: #ffb549;
+    cursor: pointer;
+}
